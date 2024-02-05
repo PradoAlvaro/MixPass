@@ -1,0 +1,30 @@
+docker ps -a = mostra todos os containers criados
+
+docker start node-academy_api-solid-pg_1 = coloca seu banco no ar
+            <nome do seu banco ou id>
+
+docker stop node-academy_api-solid-pg_1 = para pausar 
+            <nome do seu banco ou id>
+
+
+docker down node-academy_api-solid-pg_1 = para remover o seu banco 
+            <nome do seu banco ou id>
+
+======================
+
+CI/CD 
+
+CI = Continuous Integration == Rotinas que criamos para integração de codigos continuas, ou seja, para receber novos codigos na aplicação continuamente
+. Cada vez que uma alteração é enviada, uma automação é acionada para construir e testar automaticamente o código. O objetivo é detectar e corrigir problemas rapidamente, garantindo que o código seja sempre funcional e esteja sempre pronto para ser implantado.
+
+
+CD Entrega ContínuaImplantação Contínua
+CD refere-se à Entrega Contínua e Implantação Contínua, que são duas práticas relacionadas. Neste estágio, o código que passou pelas fases de Integração Contínua é automaticamente colocado em um ambiente de teste ou de pré-produção. Isso garante que o software seja sempre "entregável" e que, se necessário, pode ser implantado rapidamente.
+
+Implantação Contínua (Continuous Deployment):
+Aqui, além da Entrega Contínua, o código é automaticamente implantado em um ambiente de produção sempre que as alterações passam pelos estágios anteriores. Isso significa que, assim que o código é considerado pronto e passa por todos os testes, ele é automaticamente lançado para os usuários finais.
+
+Resumindo:
+CI/CD é uma abordagem para desenvolvimento de software que enfatiza a automação de processos. A Integração Contínua se concentra em garantir que as alterações de código sejam integradas e testadas rapidamente. A Entrega Contínua se preocupa em tornar o software sempre pronto para ser entregue, e a Implantação Contínua leva isso um passo adiante, automaticamente implantando as alterações no ambiente de produção.
+
+Essas práticas visam reduzir erros, acelerar o ciclo de vida do desenvolvimento de software e garantir que as alterações de código possam ser rapidamente e com segurança entregues aos usuários finais.

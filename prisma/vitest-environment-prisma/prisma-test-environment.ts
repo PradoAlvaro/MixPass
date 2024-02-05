@@ -31,7 +31,7 @@ const ambientePrisma: Environment = {
 
     return {
       async teardown() {
-        await prisma.$queryRawUnsafe(
+        await prisma.$executeRawUnsafe(
           `DROP SCHEMA IF EXISTS "${schema}" CASCADE`,
         )
         await prisma.$disconnect()
